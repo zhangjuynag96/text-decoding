@@ -33,7 +33,7 @@ def chinese(text):
             if 'fu-' in w :
                 data[re.findall(r'px -(.*?)px', w)[0]+'/'+re.findall(r'background:-(.*?)px', w)[0]] = w.split('{')[0]
                 col.append(re.findall(r'background:-(.*?)px', w)[0])
-                row.append(re.findall(r'px -(.*?)px', w)[0]
+                row.append(re.findall(r'px -(.*?)px', w)[0])
             w ,j,s= '',0,[]
         j = j + 1
     #print(sorted(map(int,col)))#列 首项为0；公差为140   5740/140=41+1=42一共42列
